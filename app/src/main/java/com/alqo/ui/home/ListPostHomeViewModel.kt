@@ -1,22 +1,21 @@
-package com.alqo.ui.notice
+package com.alqo.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.alqo.entities.Post
-import com.alqo.repository.PostProfileRepositoryImp
 import com.alqo.repository.PostRepository
+import com.alqo.repository.PostHomeRepositoryImp
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-
-class ListPostProfileViewModel: ViewModel() {
+class ListPostHomeViewModel : ViewModel() {
     private var _data: MutableLiveData<List<Post>> = MutableLiveData()
     val data: LiveData<List<Post>> = _data
 
-    private val repository: PostRepository = PostProfileRepositoryImp()
+    private val repository: PostRepository = PostHomeRepositoryImp()
 
     fun obtainData() {
         viewModelScope.launch(Dispatchers.Main) {

@@ -1,4 +1,4 @@
-package com.alqo.ui.notice
+package com.alqo.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment
 import com.alqo.databinding.ActivityAlqoBinding
 import com.alqo.ui.notice.CreateFragment
 import com.alqo.ui.notice.DetectionFragment
-import com.alqo.ui.notice.HomeFragment
-import com.alqo.ui.notice.ProfileFragment
+import com.alqo.ui.home.HomeFragment
+import com.alqo.ui.profile.ProfileFragment
 
 class AlqoActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAlqoBinding

@@ -1,4 +1,4 @@
-package com.alqo.ui.notice
+package com.alqo.ui.profile
 
 import android.content.Intent
 import android.os.Bundle

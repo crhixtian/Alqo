@@ -10,6 +10,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import com.alqo.R
 import com.alqo.databinding.FragmentCreateBinding
+import com.alqo.ui.home.HomeFragment
 import com.alqo.utils.User.uid
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.FirebaseFirestore
