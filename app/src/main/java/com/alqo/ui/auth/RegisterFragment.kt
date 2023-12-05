@@ -55,17 +55,26 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
     }
 
     private fun registerUser() {
-        FirebaseAuth.getInstance().createUserWithEmailAndPassword(
-            binding.emailRegister.text.toString(),
-            binding.confirmPasswordRegister.text.toString()
-        ).addOnCompleteListener {
-            if (it.isSuccessful) {
-                saveInfoUser()
-            } else {
-                showMessage("${it.exception?.message}")
-            }
+        val email = binding.emailRegister.text.toString().trim()
+        val password = binding.confirmPasswordRegister.text.toString().trim()
+        val fullName = binding.fullNameRegister.text.toString().trim()
+        val dni = binding.dniRegister.text.toString().trim()
+
+        if (email.isEmpty() || password.isEmpty() || fullName.isEmpty() || dni.isEmpty()) {
+            showMessage("Please fill in all fields")
+            return
         }
+
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener {
+                if (it.isSuccessful) {
+                    saveInfoUser()
+                } else {
+                    showMessage("${it.exception?.message}")
+                }
+            }
     }
+
 
     private fun saveInfoUser() {
         FirebaseFirestore.getInstance()

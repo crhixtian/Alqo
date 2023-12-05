@@ -34,23 +34,24 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     }
 
     private fun signInWithEmailAndPass() {
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(
-            binding.email.text.toString(),
-            binding.password.text.toString()
-        ).addOnCompleteListener {
-            if (it.isSuccessful) {
-                startActivity(
-                    Intent(
-                        context,
-                        AlqoActivity::class.java
-                    )
-                )
-            } else {
-                showMessage(binding.email.toString())
-                showMessage("Credentials incorrect")
-            }
+        val email = binding.email.text.toString().trim()
+        val password = binding.password.text.toString().trim()
+
+        if (email.isEmpty() || password.isEmpty()) {
+            showMessage("Please enter both email and password")
+            return
         }
+
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener {
+                if (it.isSuccessful) {
+                    startActivity(Intent(context, AlqoActivity::class.java))
+                } else {
+                    showMessage("Credentials incorrect")
+                }
+            }
     }
+
 
     private fun showMessage(mensaje: String) {
         Toast.makeText(context, mensaje, Toast.LENGTH_SHORT).show()
