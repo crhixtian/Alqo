@@ -1,4 +1,4 @@
-package com.alqo.ui.notice
+package com.alqo.ui.detection
 
 import android.os.Bundle
 import android.view.View
