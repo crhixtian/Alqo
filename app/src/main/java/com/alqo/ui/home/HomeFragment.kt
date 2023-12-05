@@ -1,5 +1,6 @@
 package com.alqo.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -41,6 +42,13 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                             }
                             if (entity.image.isNotEmpty()) {
                                 loadImage(entity.image, binding.imagePost)
+
+                                binding.imagePost.setOnClickListener {
+                                    val intent = Intent(it.context, FullImageActivity::class.java)
+                                    intent.putExtra("IMAGE_URL", entity.image)
+                                    it.context.startActivity(intent)
+                                }
+
                             } else {
                                 binding.imagePost.visibility = View.GONE
                             }
