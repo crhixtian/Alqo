@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notice.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:baselineAligned="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/names"
+                        style="@style/TextView16sp"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text=""
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dni"
+                        style="@style/TextView16sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text=""
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/profile_photo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/PhotoProfileRound"
+                        app:srcCompat="@drawable/photo_profile" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/biography"
+                    style="@style/TextView16sp"
+                    android:layout_width="match_parent"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/followers"
+                    style="@style/TextView16sp"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:weightSum="2">
+
+                <Button
+                    style="@style/ButtonStyleProfile"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/edit_profile"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/setting"
+                    style="@style/ButtonStyleProfile"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/setting"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

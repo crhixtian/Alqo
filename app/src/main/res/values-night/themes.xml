@@ -1,0 +1,54 @@
+<resources>
+
+    <style name="Base.Theme.Alqo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="colorPrimary">@color/principal</item>
+    </style>
+
+    <style name="Theme.Alqo" parent="Base.Theme.Alqo">
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <style name="Background">
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="TextInputEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextInputLayoutStyle">
+        <item name="android:radius">10dp</item>
+        <item name="boxStrokeColor">@color/principal</item>
+        <item name="hintTextColor">@color/principal</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="ButtonStyleProfile">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+</resources>

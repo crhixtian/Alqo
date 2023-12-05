@@ -1,0 +1,116 @@
+<resources>
+
+    <style name="Base.Theme.Alqo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimary">@color/principal</item>
+    </style>
+
+    <style name="Theme.Alqo" parent="Base.Theme.Alqo">
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextInputEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextInputLayoutStyle">
+        <item name="android:radius">10dp</item>
+        <item name="boxStrokeColor">@color/principal</item>
+        <item name="hintTextColor">@color/principal</item>
+    </style>
+
+    <style name="TextView16sp">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextViewError">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="TextViewLinked">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/principal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Background">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ImageProfileCircle">
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+    </style>
+
+    <style name="ImageViewCorner">
+        <item name="cornerSizeTopRight">10dp</item>
+        <item name="cornerSizeBottomRight">10dp</item>
+        <item name="cornerSizeBottomLeft">10dp</item>
+        <item name="cornerSizeTopLeft">10dp</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">16sp</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="ImageIconPost">
+        <item name="android:layout_width">23dp</item>
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="PhotoProfileRound">
+        <item name="cornerSizeTopRight">35dp</item>
+        <item name="cornerSizeBottomRight">35dp</item>
+        <item name="cornerSizeBottomLeft">35dp</item>
+        <item name="cornerSizeTopLeft">35dp</item>
+    </style>
+
+    <style name="ButtonStyleProfile">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/gray</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+</resources>

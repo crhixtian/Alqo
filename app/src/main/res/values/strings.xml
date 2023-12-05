@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Alqo</string>
+    <string name="register">Registro</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="user_name">Nombre de usuario</string>
+    <string name="error_password">Mínimo 8 caracteres</string>
+    <string name="error_user">Mínimo 6 caracteres</string>
+    <string name="remember_me">Recuérdame</string>
+    <string name="forgot_password_ask">¿Olvidaste la contraseña?</string>
+    <string name="error_email">Correo electronico inválido</string>
+    <string name="error_coincidence">Contraseñas no coinciden</string>
+    <string name="password_confirm">Confirmar Contraseña</string>
+    <string name="conditions_register">Al utilizar esta aplicación, acepta los Términos de Servicio</string>
+    <string name="join_now">Siguiente</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="full_name">Nombres completos</string>
+    <string name="dni">Documento nacional de identidad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hour">4h</string>
+    <string name="content">Contenido</string>
+    <string name="express_here" tools:ignore="TypographyEllipsis">Escribe aqui...</string>
+    <string name="post">Compartir</string>
+    <string name="new_post">Nuevo anuncio</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="setting">Configuración</string>
+    <string name="logou">LogOu</string>
+    <string name="logout">LogOut\n</string>
+</resources>

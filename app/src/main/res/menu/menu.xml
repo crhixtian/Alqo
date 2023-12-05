@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/iconHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_home"
+        android:title="" />
+    <item
+        android:id="@+id/iconCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_file_circle_plus"
+        android:title="" />
+    <item
+        android:id="@+id/iconDetection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_profile_card"
+        android:title="" />
+    <item
+        android:id="@+id/iconProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/icon_user"
+        android:title="" />
+
+
+</menu>
