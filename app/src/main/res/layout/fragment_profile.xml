@@ -40,7 +40,7 @@
                         style="@style/TextView16sp"
                         android:layout_width="match_parent"
                         android:fontFamily="@font/poppins_medium"
-                        android:text=""
+                        android:text="@string/firebase"
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
@@ -48,7 +48,7 @@
                         android:id="@+id/dni"
                         style="@style/TextView16sp"
                         android:fontFamily="@font/poppins_medium"
-                        android:text=""
+                        android:text="@string/firebase"
                         android:textColor="@color/gray" />
                 </LinearLayout>
 
@@ -71,26 +71,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/biography"
-                    style="@style/TextView16sp"
-                    android:layout_width="match_parent"
-                    android:text="" />
-
-                <TextView
-                    android:id="@+id/followers"
-                    style="@style/TextView16sp"
-                    android:layout_width="match_parent"
-                    android:text=""
-                    tools:ignore="TextContrastCheck" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
                 android:weightSum="2">
 
                 <Button

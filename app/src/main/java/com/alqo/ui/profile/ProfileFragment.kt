@@ -54,7 +54,6 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
                 withContext(Dispatchers.Main) {
                     user?.let {
                         binding.names.text = it.names
-                        binding.biography.text = it.biography
                         binding.dni.text = "@" + it.dni
                         loadImage(it.image, binding.profilePhoto)
                     }

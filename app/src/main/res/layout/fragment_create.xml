@@ -100,6 +100,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="end"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -107,11 +108,18 @@
         <Button
             android:id="@+id/button_save"
             style="@style/ButtonStyleProfile"
-            android:layout_weight="0"
             android:layout_width="140dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:text="@string/post" />
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0"
+            android:text="@string/post"
+            tools:ignore="InefficientWeight" />
+
+        <TextView
+            style="@style/TextHelpStyle"
+            android:layout_marginHorizontal="10dp"
+            android:text="Se sugiere colocar descripción del perro, donde fue visto por ultima vez e información de contacto."
+            android:textAlignment="center" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
